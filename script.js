@@ -1,20 +1,22 @@
 var currentDay = new Date($.now());
 $("#currentDay").html(currentDay);
 var dayContent = JSON.parse(localStorage.getItem("input"));
+moment().format('LL');
 
 if (dayContent === null) {
     dayContent = ["", "", "", "", "", "", "", "", "", "", "", ""];
 }
+moment().format('LL');
 
-var now = moment();
+// var now = moment();
 
-$('time').each(function(i, e) {
-    var currentDay = moment($(e).attr('datetime'));
+// $('time').each(function(i, e) {
+//     var currentDay = moment($(e).attr('datetime'));
 
-    if (now.diff(time, 'days') <= 1) {
-        $(e).html('<span>' + time.from(now) + '</span>');
-    }
-});
+//     if (now.diff(time, 'days') <= 1) {
+//         $(e).html('<span>' + time.from(now) + '</span>');
+//     }
+// });
 
 
 for (i = 9; i < 17; i++) {
