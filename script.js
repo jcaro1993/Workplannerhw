@@ -6,7 +6,7 @@ moment().format('LL');
 if (dayContent === null) {
     dayContent = ["", "", "", "", "", "", "", "", "", "", "", ""];
 }
-moment().format('LL');
+// moment().format('LL');
 
 // var now = moment();
 
@@ -19,7 +19,7 @@ moment().format('LL');
 // });
 
 
-for (i = 9; i < 17; i++) {
+for (i = 9; i < 18; i++) {
     $("#" + i.toString()).html(dayContent[i - 9])
     if (i === currentDay.getHours()) {
         $("#" + i.toString()).attr("class", "form-control present");
